@@ -1,0 +1,7 @@
+*.sbt
+*.metals
+*.bsp
+*.scala-build
+*.vscode
+
+
