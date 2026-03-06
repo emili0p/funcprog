@@ -10,7 +10,7 @@ def integrar(f: Double => Double, a: Double, b: Double, pasos: Int): Double = {
   val dx = (b - a) / pasos
   var suma = 0.0
 
-  // 2️⃣ _ podría usarse aquí si NO necesitáramos el índice donde se esta sumando
+  // _ podría usarse aquí si NO necesitáramos el índice donde se esta sumando
   // _ significa: no me importa este valor
   // otros lenguajes como rust (el cual es genial) el _ tambien se puede usar como placeholder
   // o para ignorar un valor
