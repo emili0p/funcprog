@@ -1,5 +1,5 @@
 // al momento de importar poner _ hace que se traiga todo de una liberia !!
-import scala.math._   // contiene cosas como sin, cos, Pi, etc.
+import scala.math._ // contiene cosas como sin, cos, Pi, etc.
 
 // Función que recibe otra función (el parametro f), lo demas son los numeros con los que se va a integrar
 // siendo f la propia funcion dentro de la integral
