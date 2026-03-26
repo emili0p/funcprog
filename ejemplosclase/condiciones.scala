@@ -27,19 +27,30 @@ val nombres = List(
   "brian"
 )
 val cantidadalumnos = nombres.length
+// generar edades más variadas
+val edades = List.fill(nombres.length)(Random.between(10, 80))
 
-// lista de edades
-val edades = List.fill(cantidadalumnos)(Random.between(17, 23))
-
-// combinar en una matriz (lista de tuplas)
 val personas = nombres.zip(edades)
+
 for ((nombre, edad) <- personas) {
 
-  val mensaje = {
-    if (edad >= 30) "adulto"
-    else if (edad >= 18) "joven"
-    else "menor"
+  lazy val verificacion = {
+    println("Evaluando acceso...")
+    
+    val categoria =
+      if (edad < 18) "Menor"
+      else if (edad < 60) "Adulto"
+      else "Adulto mayor"
+
+    val costo =
+      if (categoria == "Menor") 50
+      else if (categoria == "Adulto") 100
+      else 30
+
+    (categoria, costo)
   }
 
-  println(s"$nombre tiene $edad años -> $mensaje")
+  val (categoria, costo) = verificacion
+
+  println(s"$nombre - Edad: $edad - Categoria: $categoria - Costo: $$${costo}")
 }
