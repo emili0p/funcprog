@@ -3,5 +3,7 @@
 *.bsp
 *.scala-build
 *.vscode
+*.scala-build
 
+*.class
 
