@@ -1,3 +1,8 @@
+// most things were taken from
+// https://github.com/martynafford/game-of-life-ncurses.git
+// can be buggy
+// se compila con scalac gameoflife.scala
+// emilio izquierdo montero
 import org.jline.terminal.TerminalBuilder
 import org.jline.utils.NonBlockingReader
 import scala.util.Random
