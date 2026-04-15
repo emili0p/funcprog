@@ -102,7 +102,7 @@ object JuegoDeLaVida {
         if (c == 'q') salir = true
 
         // velocidad de la animacion
-        Thread.sleep(800)
+        Thread.sleep(50)
       }
     } finally {
       terminal.close()
