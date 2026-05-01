@@ -6,10 +6,10 @@ case class NodoN[A](izquierdo: ArbolN[A], derecha: ArbolN[A]) extends ArbolN[A]
 
   val nombresArbol =
     NodoN(
-      HojaN("Estefany"),
+      HojaN("Emilioooooooooooooo"),
       NodoN(
-        HojaN("Mariana"),
-        HojaN("Luis")
+        HojaN("Francisca"),
+        HojaN("del carmen")
       )
     )
 
