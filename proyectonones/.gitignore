@@ -1,11 +1,3 @@
-*.sbt
-*.metals
-*.bsp
-*.scala-build
-*.vscode
-*.scala-build
-
-*.class
 # macOS
 .DS_Store
 
