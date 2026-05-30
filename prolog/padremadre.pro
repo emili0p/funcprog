@@ -1,44 +1,55 @@
-/* Primera generación */
-padre(martina, carlos).
-madre(elena, carlos).
+/* 
+   HECHOS BASE
+   */
 
+/* PADRES */
+
+padre(roberto, carlos).
 padre(roberto, patricia).
-madre(elena, patricia).
-
 padre(roberto, miguel).
-madre(elena, miguel).
 
-/* Segunda generación */
 padre(carlos, daniel).
-madre(laura, daniel).
-
 padre(carlos, sofia).
-madre(laura, sofia).
 
 padre(miguel, andres).
-madre(silvia, andres).
-
 padre(miguel, camila).
-madre(silvia, camila).
 
 padre(jose, laura).
-madre(marta, laura).
-
 padre(jose, ricardo).
-madre(marta, ricardo).
 
 padre(ricardo, valeria).
-madre(patricia, valeria).
-
 padre(ricardo, fernando).
-madre(patricia, fernando).
 
-/* Tercera generación */
 padre(daniel, mateo).
-madre(paula, mateo).
 
 padre(andres, lucia).
+
+
+/* MADRES */
+
+madre(elena, carlos).
+madre(elena, patricia).
+madre(elena, miguel).
+
+madre(laura, daniel).
+madre(laura, sofia).
+
+madre(silvia, andres).
+madre(silvia, camila).
+
+madre(marta, laura).
+madre(marta, ricardo).
+
+madre(patricia, valeria).
+madre(patricia, fernando).
+
+madre(paula, mateo).
+
 madre(karla, lucia).
+
+
+/*    REGLAS
+   */
 
 /* Relaciones básicas */
 
@@ -164,6 +175,10 @@ familiar_directo(X,Y) :-
 
 familiar_directo(X,Y) :-
     abuela(X,Y).
+
+
+/*    CONSULTAS DE PRUEBA
+
 
 abuelo(X, mateo).
 
